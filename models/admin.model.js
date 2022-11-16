@@ -1,7 +1,7 @@
 import { db } from "../db.js";
 import { DataTypes } from "sequelize";
 
-// Definir modelo de cuenta
+// Definir modelo de administrador
 export const Admin = db.define(
   "admin",
   {

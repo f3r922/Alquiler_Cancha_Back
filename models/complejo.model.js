@@ -1,7 +1,7 @@
 import { db } from "../db.js";
 import { DataTypes } from "sequelize";
 
-// Definir modelo de materias
+// Definir modelo de complejo
 export const Complejo = db.define(
   "complejo",
   {
