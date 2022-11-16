@@ -14,7 +14,7 @@ export const Complejo = db.define(
     },
     denominacion: { field: "denominacion", type: DataTypes.STRING(100) },
     encargado: { field: "encargado", type: DataTypes.STRING(100) },
-    dni: { field: "denominacion", type: DataTypes.STRING(8) },
+    dni: { field: "dni", type: DataTypes.STRING(8) },
     domicilio: { field: "domicilio", type: DataTypes.STRING(100) },
     fechaAlta: { field: "fecha_alta", type: DataTypes.DATEONLY },
   },
