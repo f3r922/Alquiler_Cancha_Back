@@ -1,5 +1,5 @@
 import express from "express";
-import { Persona } from "../models/index.js";
+import { Persona } from "../models/persona.model.js";
 
 export const personasRouter = express.Router();
 
