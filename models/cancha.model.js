@@ -3,7 +3,7 @@ import { DataTypes } from "sequelize";
 import { Deporte } from "./deporte.model.js";
 import { Complejo } from "./complejo.model.js";
 
-// Definir modelo de cuenta
+// Definir modelo de cancha
 export const Cancha = db.define(
   "cancha",
   {

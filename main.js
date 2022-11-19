@@ -6,6 +6,9 @@ import cors from "cors";
 import { canchasRouter } from "./routers/canchas.router.js";
 import { deportesRouter } from "./routers/deportes.router.js";
 import { complejosRouter } from './routers/complejos.router.js';
+import { authRouter } from './routers/auth.router.js';
+import { personasRouter } from './routers/personas.router.js';
+import{ alquileresRouter} from './routers/alquileres.router.js';
 
 // Configurar Express
 const app = express();
@@ -16,6 +19,9 @@ app.use(cors());
 app.use("/canchas", canchasRouter);
 app.use("/deportes", deportesRouter);
 app.use("/complejos", complejosRouter);
+app.use("/auth", authRouter);
+app.use("/personas", personasRouter);
+app.use("/alquileres", alquileresRouter);
 
 // Mensaje de bienvenida
 app.get("/", (req, res) => {

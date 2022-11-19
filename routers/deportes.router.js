@@ -1,11 +1,11 @@
 import express from "express";
-import { Deporte } from "../models/index.js";
+import { Cancha, Deporte } from "../models/index.js";
 
 export const deportesRouter = express.Router();
 
 // GET /
 deportesRouter.get("/", async (req, res) => {
-  const deportes = await Deporte.findAll();
+  const deportes = await Deporte.findAll({include: Cancha});
   res.send(deportes);
 });
 
